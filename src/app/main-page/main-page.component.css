@@ -1,0 +1,9 @@
+@import "~bootstrap/dist/css/bootstrap.css";
+.button {
+  margin-top: 50px;
+  color: black;
+  border-bottom-color: gray();
+
+  border-radius: 8px;
+  background-color: rgba(241, 154, 14, 0.96);
+}

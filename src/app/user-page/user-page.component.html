@@ -1,0 +1,25 @@
+<div *ngIf="user">
+<h3 align="center">Hello {{user.userName}}</h3>
+
+<ul>
+  <div align="center">
+
+    <dl *ngFor="let training of user.userTraining">
+      <button class="button"  routerLink="">
+        <h1 align="center">
+          {{training}}
+        </h1>
+      </button>
+    </dl>
+  </div>
+</ul>
+
+  <div align="center">
+    <p>
+      Введите название тренировки:
+      <input #trainingName>
+      <button (click)="addTraining(trainingName)">Add</button>
+    </p>
+  </div>
+
+</div>

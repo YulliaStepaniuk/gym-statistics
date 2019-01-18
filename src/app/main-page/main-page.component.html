@@ -1,0 +1,12 @@
+
+<ul>
+  <div align="center">
+    <dl *ngFor="let user of users">
+      <button class="button" (click)="transportUser(user)" routerLink="/gym/userPage/{{user.userName}}">
+        <h1 align="center">
+          {{user.userName}}
+        </h1>
+      </button>
+    </dl>
+  </div>
+</ul>
