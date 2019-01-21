@@ -1,12 +1,21 @@
-
-<ul>
-  <div align="center">
-    <dl *ngFor="let user of users">
-      <button class="button" (click)="transportUser(user)" routerLink="/gym/userPage/{{user.userName}}">
-        <h1 align="center">
-          {{user.userName}}
-        </h1>
-      </button>
-    </dl>
+<div class="body">
+<section class="header">
+  <div class="lineleft"></div>
+  <div class="lineright"></div>
+  <div class="linetop"></div>
+  <div class="linebottom"></div>
+  <div class="container">
+    <div class="logo"></div>
   </div>
-</ul>
+  <h1>Welcome to <span>Gym Statistics</span></h1>
+  <ul class="group">
+      <dl *ngFor="let user of users">
+        <button class="button" (click)="transportUser(user)" routerLink="/gym/userPage/{{user.userName}}">
+            {{user.userName}}
+        </button>
+      </dl>
+  </ul>
+  <p class="credits">Тестовая версия 2019</p>
+</section>
+</div>
+

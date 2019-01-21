@@ -1,9 +1,120 @@
-@import "~bootstrap/dist/css/bootstrap.css";
-.button {
-  margin-top: 50px;
-  color: black;
-  border-bottom-color: gray();
 
-  border-radius: 8px;
-  background-color: rgba(241, 154, 14, 0.96);
+.body{
+  padding-top: 0px;
+  color: #fff;
+  font-family: Roboto;
+  font-size: 48px;
+}
+
+.header{
+  margin: 0px;
+  height: 969px;
+  width: 100%;
+  background: url("backg.jpg") no-repeat center top / cover;
+}
+
+.lineleft{
+  width: 7px;
+  height: 499px;
+  box-sizing: border-box;
+  background: #b8bfc3;
+  padding: 0px;
+  margin: 235px 0px 235px 50px;
+  position: absolute;
+}
+
+.lineright{
+  width: 7px;
+  height: 499px;
+  box-sizing: border-box;
+  background: #b8bfc3;
+  padding: 0px;
+  margin: 235px 50px 235px 95%;
+  position: absolute;
+}
+
+.linetop{
+  width: 226px;
+  height: 7px;
+  box-sizing: border-box;
+  background: #b8bfc3;
+  margin: 30px 870px 0px 870px;
+  position: absolute;
+}
+
+.linebottom{
+  width: 226px;
+  height: 7px;
+  box-sizing: border-box;
+  background: #b8bfc3;
+  padding: 0px;
+  margin: 910px 870px 30px 870px;
+  position: absolute;
+}
+
+
+.container{
+  width: 1170px;
+  margin: 0px auto;
+  padding-top: 30px;
+}
+
+.logo {
+  border-radius: 50%;
+  height: 110px;
+  width: 110px;
+  background: url("logo1.png") #dae1e3 no-repeat center;
+  text-align: center;
+  margin: 60px 700px 0px 550px;
+
+}
+
+
+h1{
+  text-align: center;
+  font-size: 60px;
+  font-weight: bold;
+  padding: 50px;
+}
+
+h1 span{
+  color: #ff7301;
+}
+
+.button {
+  background: rgba(185, 190, 193, 0.6);
+  color: #fff ;
+  font-size: 36px;
+  text-transform: uppercase;
+  font-weight: bold;
+  width: 300px;
+  height: 70px;
+  text-align: center;
+  padding: 0px 0px;
+  margin: 0% 0% 0% 0%;
+  border: 0px;
+}
+
+.button:active{
+  background: #ffb400;
+}
+
+
+.button:hover{
+  background: #8599a0;
+  box-shadow: 0 0 5px 2px rgba(27, 27, 27, 1)
+}
+
+.group{
+  display:flex;
+  justify-content: space-around;
+  padding-top: 70px;
+}
+
+
+.credits{
+  position: absolute;
+  font-size: 24px;
+  top: 94%;
+  left: 46%;
 }
