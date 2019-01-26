@@ -1,0 +1,129 @@
+.container{
+  z-index: 2;
+  width: 1170px;
+}
+
+.formBackground{
+  z-index: 1;
+  background: #7d9196;
+  height: 100%;
+  width: 35%;
+  left: 15%;
+  box-sizing: border-box;
+  position: absolute;
+
+}
+
+.title {
+  color: white;
+  margin: 0;
+  padding-left: 45%;
+}
+
+.ul {
+  padding-left: 0;
+}
+
+img{
+  position: absolute;
+  top: 20%;
+  left: 60%;
+}
+
+
+.title1{
+  color:#fff;
+  margin-top: 150px;
+  font-size: 24px;
+  padding-top: 50px;
+  text-align: center;
+
+}
+
+
+.trainingName{
+  background: #12202d;
+  color: #fff;
+  border: 0px;
+  width: 80%;
+  height: 50px;
+  font-size: 18px;
+  box-sizing: border-box;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+  margin-left: 10%;
+
+}
+
+.trainingName:active{
+  background: #171515;
+  color: #c4c4c4;
+}
+
+
+.trainingName:hover{
+  background: #171515;
+  color: #c4c4c4;
+}
+
+
+.enter{
+  width: 90%;
+  display: inline-flex;
+  margin-top: 10px;
+  margin-left: 10%;
+
+}
+
+.buttonDelete {
+  margin-left: 1%;
+  border: 0;
+  border-radius: 5px;
+  color: rgb(251, 250, 255);
+  background: #ff5e18;
+}
+
+.button {
+  background: #12202d;
+  color: #fff;
+  font-size: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+  width: 19%;
+  height: 40px;
+  text-align: center;
+  float: right;
+  border: 0;
+  padding: 0;
+}
+
+
+.button:active{
+  background: #171515;
+  color: #c4c4c4;
+}
+
+
+.button:hover{
+  background: #171515;
+  color: #c4c4c4;
+}
+
+
+.cell{
+  background: #fff;
+  display: block;
+  height: 40px;
+  width: 70%;
+  border: 0px;
+  margin-bottom: 14px;
+  font-size: 18px;
+  box-sizing: border-box;
+  padding-left: 10px;
+}
+
+
+

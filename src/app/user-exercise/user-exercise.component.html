@@ -1,0 +1,49 @@
+
+
+<div class="container" *ngIf="user && user.userTraining">
+  <img src="men.png" alt="Мужик">
+  <h3 class="title">{{user.userName}} it's your exercise</h3>
+  <h3 class="title">{{user.userTraining[index].trainingName}} </h3>
+  <div class="formBackground">
+
+    <ul>
+      <div>
+        <dl *ngFor="let exercise of user.userTraining[index].userExercises">
+          <button class="button" (click)="choice(exercise)"  routerLink="/gym/exerciseView/{{user.userName}}">
+            <h1>
+              {{exercise.exerciseName}}
+              <button [hidden]="createMode" (click)="deleteExercise(exercise)">X</button>
+            </h1>
+          </button>
+        </dl>
+      </div>
+    </ul>
+
+    <button [hidden]="!createMode" (click)="isCreateMode()" >Create Mode</button>
+
+    <div [hidden]="createMode">
+          <form #myForm="ngForm" (ngSubmit)="finish(exerciseName.value, param1.value, param2.value, +count.value)">
+         <p>
+            Введите название упражнения:
+              <input [ngModel] name="exerciseName" #exerciseName>
+          </p>
+          <p>
+            Укажите параметр 1:
+            <input [ngModel] name="param1" #param1>
+          </p>
+          <p>
+            Укажите параметр 2:
+            <input [ngModel] name="param2" #param2>
+          </p>
+          <p>
+            Сколько будет подходов?:
+            <input [ngModel] name="count" #count>
+          </p>
+
+          <button type="submit">Finish</button>
+        </form>
+     </div>
+
+  </div>
+
+</div>
