@@ -9,6 +9,9 @@ import { MainPageComponent } from './main-page/main-page.component';
 import {MongoDBService} from './mongo-db.service';
 import {HttpClientModule} from '@angular/common/http';
 import {TransporterService} from './transporter.service';
+import { UserExerciseComponent } from './user-exercise/user-exercise.component';
+import { ExerciseViewComponent } from './exercise-view/exercise-view.component';
+import {FormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,11 +19,14 @@ import {TransporterService} from './transporter.service';
     UserPageComponent,
     UserStatisticsComponent,
     MainPageComponent,
+    UserExerciseComponent,
+    ExerciseViewComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [
     MongoDBService,

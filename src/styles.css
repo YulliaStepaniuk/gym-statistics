@@ -1,3 +1,73 @@
 /* You can add global styles to this file, and also import other style files */
-@import "~bootstrap/dist/css/bootstrap.css";
+body {
+  margin: 0;
+  padding-top: 0;
+  color: #171616;
+  font-family: 'Roboto', sans-serif;
+  width: 100%;
+  height: 100%;
+  background: #12202d no-repeat center top / cover;
+}
+
+.logo {
+  z-index: 3;
+  border-radius: 50%;
+  height: 110px;
+  width: 110px;
+  background: url('~src/img/logos.png') #dae1e3 no-repeat center;
+  box-sizing: border-box;
+  position: absolute;
+  left: 50%;
+  top: 6%;
+  transform: translateX(-50%);
+}
+
+.lineLeft{
+  width: 7px;
+  height: 50%;
+  top: 25%;
+  left: 3%;
+  position: absolute;
+  background: #b8bfc3;
+}
+
+.lineRight{
+  width: 7px;
+  height: 50%;
+  top: 25%;
+  left: 97%;
+  position: absolute;
+  background: #b8bfc3;
+}
+
+.lineTop{
+  z-index: 2;
+  width: 20%;
+  height: 7px;
+  top: 3%;
+  left: 40%;
+  position: absolute;
+  background: #b8bfc3;
+}
+
+.lineBottom {
+  z-index: 2;
+  width: 20%;
+  height: 7px;
+  top: 97%;
+  left: 40%;
+  position: absolute;
+  background: #b8bfc3;
+}
+
+.credits{
+  z-index: 2;
+  font-size: 18px;
+  color: #c4c4c4;
+  text-align: center;
+  top: 92%;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+}
 

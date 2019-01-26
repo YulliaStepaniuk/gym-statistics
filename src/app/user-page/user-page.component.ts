@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {MongoDBService} from '../mongo-db.service';
 import {TransporterService} from '../transporter.service';
-import {User} from '../user';
+import {Training, User} from '../user';
 
 
 
@@ -31,7 +31,18 @@ export class UserPageComponent implements OnInit {
   }
 
   addTraining(trainingName) {
-    this.user.userTraining.push(trainingName);
+    const training = new Training(trainingName);
+    this.user.userTraining.push(training);
+    this.mongoDB.updateUsers(this.user);
   }
-
+  delete(training) {
+    if (confirm('Are you sure to delete this training')) {
+      const index = this.user.userTraining.indexOf(training);
+      this.user.userTraining.splice(index, 1);
+      this.mongoDB.updateUsers(this.user);
+    }
+  }
+  choice(training: Training) {
+    sessionStorage.setItem('training', this.user.userTraining.indexOf(training).toString());
+  }
 }

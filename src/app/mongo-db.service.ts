@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import {HttpClient} from '@angular/common/http';
+import {User} from './user';
 
 @Injectable({
   providedIn: 'root'
@@ -15,5 +16,9 @@ export class MongoDBService {
 
   getUserById(id) {
     return this.http.get(`${this.url}/findById/${id}`);
+  }
+
+  updateUsers(user: User): void {
+    this.http.post(`${this.url}/update/${user._id}`, user).subscribe(res => console.log('Update Done'));
   }
 }

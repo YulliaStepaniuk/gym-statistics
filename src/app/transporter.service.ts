@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+import {Injectable} from '@angular/core';
 import {User} from './user';
 
 @Injectable({
@@ -16,8 +16,7 @@ export class TransporterService {
   }
 
   getUser() {
-    const temp = this.user;
-    return temp;
+    return this.user;
   }
 
   clearUser() {
