@@ -10,7 +10,7 @@ let User = new Schema({
   },
   userTraining: {
     type: Array
-  }
+  },
 },{
     collection: 'Users'
 });
